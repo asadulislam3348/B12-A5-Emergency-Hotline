@@ -37,7 +37,7 @@ copyBtns.forEach((btn) => {
 // ---------------- Call Buttons ----------------
 const callBtns = document.querySelectorAll(".fa-phone");
 const historySection = document.querySelector(
-  ".p-2.m-2.rounded-2xl.bg-slate-50"
+  ".history"
 );
 
 callBtns.forEach((btn) => {
@@ -66,7 +66,7 @@ callBtns.forEach((btn) => {
   });
 });
 
-// ---------------- Clear History ----------------
+// -------Clear History --------- 
 const clearBtn = historySection.querySelector("button");
 clearBtn.addEventListener("click", () => {
   // শুধুমাত্র header রেখে বাকি clear হবে
@@ -75,5 +75,5 @@ clearBtn.addEventListener("click", () => {
             <h1><i class="fa-solid fa-clock"></i> Call History</h1>
             <button class="text-white border-1 border-[#d4d6d5] border-solid rounded-2xl bg-[#00a63e] w-18 h-8 px-0.5">Clear</button>
         </div>
-    `;
+   `;
 });
